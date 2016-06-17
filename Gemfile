@@ -24,17 +24,29 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
-gem 'rails_12factor', group: :production
-
-#Adding Twitter Bootstrap
-gem 'sprockets', '2.11.0'
-gem 'sass-rails'
-
-#Simple Form Gem
-gem 'simple_form'
 group :development, :test do
 	gem 'rspec-rails', '~> 3.0'
 end
+
+gem 'bootstrap-sass', '~> 3.3.5.1'
+gem	'sass-rails'
+gem 'simple_form'
+gem 'devise', '>= 3.2.4'
+
+gem 'rails_12factor', group: :production
+
+group :development do
+  # Access an IRB console on exception pages or by using <%= console %> in views
+  gem 'web-console', '~> 2.0'
+
+  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  gem 'spring'
+end
+
+
+
+
+
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

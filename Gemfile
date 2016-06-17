@@ -30,6 +30,8 @@ gem 'rails_12factor', group: :production
 gem 'sprockets', '2.11.0'
 gem 'sass-rails'
 
+#Simple Form Gem
+gem 'simple_form'
 group :development, :test do
 	gem 'rspec-rails', '~> 3.0'
 end

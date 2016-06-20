@@ -1,5 +1,12 @@
 <h1>Grams!</h1>
 
+<% @grams.each do |grams| %>
+<div>
+<%= gram.message %>
+<%= iamge_tag gram.picture %>
+</div>
+<% end %>
+
 <%= simple_form_for @gram do |f| %>
 	<%= f.input :message %>
 	<%= f.submit "Post!" %>
